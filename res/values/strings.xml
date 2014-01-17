@@ -6126,4 +6126,7 @@
    <string name="usb_sdcard_title">Mount SD card</string>
    <string name="external_storage_turn_on">External storage has been turned on</string>
    <string name="external_storage_turn_off">External storage has been turned off</string>
+
+    <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
+    <string name="supersu_title">SuperSU</string>
 </resources>
