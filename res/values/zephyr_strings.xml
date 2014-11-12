@@ -120,4 +120,11 @@
     <!-- Double tap-to-sleep -->
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="double_tap_to_sleep_summary">Double-tap on the status bar or top third and bottom shortcut area of the lock screen to turn off the display</string>
+
+    <!--- Volume key cursor control -->
+    <string name="volume_rocker_screen_title">Volume rocker</string>
+    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
+    <string name="volume_key_cursor_control_off">Disabled</string>
+    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
 </resources>
