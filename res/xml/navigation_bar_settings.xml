@@ -36,6 +36,5 @@
             android:fragment="com.android.settings.custom.nav.NavbarSettings"
             android:title="@string/aosp_navigation_bar" />
 
-    </PreferenceCategory>
 </PreferenceScreen>
 
