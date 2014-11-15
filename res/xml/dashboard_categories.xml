@@ -242,6 +242,14 @@
                 android:icon="@drawable/ic_settings_security"
                 />
 
+        <!-- Privacy Settings -->
+        <dashboard-tile
+                android:id="@+id/privacy_settings_candy"
+                android:title="@string/privacy_settings_title"
+                android:fragment="com.android.settings.candy.PrivacySettings"
+                android:icon="@drawable/ic_settings_privacy"
+                />
+
         <!-- Account -->
         <dashboard-tile
                 android:id="@+id/account_settings"
