@@ -78,5 +78,10 @@
     <!-- Lock screen settings -->
     <string name="lock_screen_title">Lock screen</string>
     <!-- Status bar-->
-    <string name="status_bar_title">Status bar</string>
+    <string name="status_bar_title">Status bar</string> 
+
+    <!-- Wakeup options -->
+    <string name="display_category_wakeup_options_title">Wakeup options</string>
+    <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
+    <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged.</string>
 </resources>
