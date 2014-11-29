@@ -127,4 +127,11 @@
     <string name="volume_key_cursor_control_off">Disabled</string>
     <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
     <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+
+    <!-- Advanced sound category -->
+    <string name="advanced_sound_category">sound settings</string>
+
+    <!-- Volume rocker music seek options -->
+    <string name="volbtn_music_controls_title">Volume rocker music controls</string>
+    <string name="volbtn_music_controls_summary">When screen off, long-pressing the volume rockers will seek music tracks</string>
 </resources>

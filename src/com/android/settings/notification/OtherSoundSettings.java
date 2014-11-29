@@ -29,6 +29,11 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Vibrator;
 import android.provider.SearchIndexableResource;
+import android.preference.Preference;
+import android.preference.PreferenceScreen;
+import android.preference.SwitchPreference;
+import android.provider.Settings;
+import android.provider.Settings.SettingNotFoundException;
 import android.provider.Settings.Global;
 import android.provider.Settings.System;
 import android.telephony.TelephonyManager;
@@ -44,7 +49,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class OtherSoundSettings extends SettingsPreferenceFragment implements Indexable {
+public class OtherSoundSettings extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "OtherSoundSettings";
 
     private static final int DEFAULT_ON = 1;
@@ -66,6 +72,9 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_VIBRATE_ON_TOUCH = "vibrate_on_touch";
     private static final String KEY_DOCK_AUDIO_MEDIA = "dock_audio_media";
     private static final String KEY_EMERGENCY_TONE = "emergency_tone";
+    private static final String KEY_VOLBTN_MUSIC_CTRL = "volbtn_music_controls";
+
+    private SwitchPreference mVolBtnMusicCtrl;
 
     private static final SettingPref PREF_DIAL_PAD_TONES = new SettingPref(
             TYPE_SYSTEM, KEY_DIAL_PAD_TONES, System.DTMF_TONE_WHEN_DIALING, DEFAULT_ON) {
@@ -189,6 +198,11 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
 
         mContext = getActivity();
 
+        mVolBtnMusicCtrl = (SwitchPreference) findPreference(KEY_VOLBTN_MUSIC_CTRL);
+        mVolBtnMusicCtrl.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.VOLUME_MUSIC_CONTROLS, 1) != 0);
+        mVolBtnMusicCtrl.setOnPreferenceChangeListener(this);
+
         for (SettingPref pref : PREFS) {
             pref.init(this);
         }
@@ -204,6 +218,22 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
     public void onPause() {
         super.onPause();
         mSettingsObserver.register(false);
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        // If we didn't handle it, let preferences handle it.
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        final String key = preference.getKey();
+        if (KEY_VOLBTN_MUSIC_CTRL.equals(key)) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.VOLUME_MUSIC_CONTROLS,
+                    (Boolean) newValue ? 1 : 0);
+        }
+        return true;
     }
 
     private static boolean hasDockSettings(Context context) {
