@@ -278,4 +278,8 @@
 
     <!-- Gestures -->
     <string name="gesture_settings_title">Gestures</string>
- </resources>
+
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">Prevent accidental wake-up</string>
+    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+</resources>
