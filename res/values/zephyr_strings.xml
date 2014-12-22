@@ -577,4 +577,7 @@
     <!-- About phone screen, Zephyr device maintainer name -->
     <string name="device_maintainer">Device maintainer</string>
     <string name="device_maintainers">Device maintainers</string>
+
+    <!-- Navigation bar toggle -->
+    <string name="navbar_enable_bar">Enable</string>
 </resources>
