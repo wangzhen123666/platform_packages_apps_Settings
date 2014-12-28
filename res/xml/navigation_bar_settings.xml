@@ -42,5 +42,9 @@
             android:fragment="com.android.settings.custom.nav.NavbarSettings"
             android:title="@string/aosp_navigation_bar" />
 
+        <Preference
+            android:key="button_settings"
+            android:fragment="com.android.settings.ButtonSettings"
+            android:title="@string/button_keys_title" />
 </PreferenceScreen>
 

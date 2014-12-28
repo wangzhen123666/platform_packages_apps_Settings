@@ -20,4 +20,6 @@
     <item name="config_flingMinLongSwipeThreshold" format="float" type="dimen">0.20</item>
     <item name="config_flingMaxLongSwipeThreshold" format="float" type="dimen">0.50</item>
 
+    <!-- Whether device has hardware buttons -->
+    <bool name="config_has_hardware_buttons">false</bool>
 </resources>
