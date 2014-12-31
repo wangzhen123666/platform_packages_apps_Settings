@@ -222,4 +222,8 @@
     <string name="toast_icon_title">Toast icon</string>
     <string name="summary_toast_icons_enabled">Toast icon badge is enabled</string>
     <string name="summary_toast_icons_disabled">Toast icon badge is disabled</string>
+
+    <!-- Qucik unlock -->
+    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
+    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
 </resources>
