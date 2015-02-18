@@ -51,7 +51,6 @@
  
     <!-- Power menu customization -->
     <string-array name="power_menu_actions_array" translatable="false">
-        <item>power</item>
         <item>reboot</item>
         <item>screenshot</item>
         <item>airplane</item>
