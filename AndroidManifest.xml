@@ -2137,6 +2137,10 @@
             android:launchMode="singleTop"
             android:theme="@style/CryptKeeperBlankTheme"
         />
+ 
+ 	<!-- Saosp Start -->
+        <activity android:name=".simpleaosp.SaospSettings" />
+        <!-- Saosp End -->
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"

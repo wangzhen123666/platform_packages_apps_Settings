@@ -71,4 +71,12 @@
     <string name="notification_light_default_value">Default</string>
     <string name="notification_light_missed_call_title">Missed call</string>
     <string name="notification_light_voicemail_title">Voicemail</string>
+
+    <!-- Zephyr Settings menus -->
+    <string name="simpleaosp_settings_title">pimp my rom</string>
+    <string name="keywords_simpleaosp">ZephyrOS</string>
+    <!-- Lock screen settings -->
+    <string name="lock_screen_title">Lock screen</string>
+    <!-- Status bar-->
+    <string name="status_bar_title">Status bar</string>
 </resources>

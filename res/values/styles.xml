@@ -357,4 +357,5 @@
     <style name="SetupWizardStorageStyle" parent="@style/SuwThemeMaterial.Light">
         <item name="android:colorAccent">#ff009688</item>
     </style>
+
 </resources>

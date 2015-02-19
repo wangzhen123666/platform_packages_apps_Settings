@@ -7012,7 +7012,6 @@
     <string name="write_settings_on">Yes</string>
     <!-- Summary of app not allowed to write system settings [CHAR LIMIT=45] -->
     <string name="write_settings_off">No</string>
-
     <string name="sim_enabler_summary">" is %1$s"</string>
     <string name="sim_enabled">enabled</string>
     <string name="sim_disabled">disabled</string>
@@ -7064,4 +7063,5 @@
 
     <!-- Description of feature to change color setting for the display [CHAR LIMIT=NONE] -->
     <string name="picture_color_mode_desc">Use sRGB</string>
+
 </resources>
