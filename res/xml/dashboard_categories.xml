@@ -112,6 +112,17 @@
                android:targetPackage="com.vipercn.viper4android_v2" />
         </dashboard-tile>
         
+        <!-- Kernel Auditor App -->
+        <dashboard-tile
+                android:id="@+id/kernel_auditor"
+                android:icon="@drawable/ic_screwd_performance_purp"
+                android:title="@string/kernel_tweaker">
+                <intent
+                    android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.grarak.kerneladiutor"
+                    android:targetClass="com.grarak.kerneladiutor.MainActivity" />
+        </dashboard-tile>
+
         <!-- Gestures -->
         <dashboard-tile
                 android:id="@+id/device_specific_gesture_settings"
