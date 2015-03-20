@@ -69,6 +69,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_WEBVIEW_LICENSE = "webview_license";
     private static final String KEY_SYSTEM_UPDATE_SETTINGS = "system_update_settings";
     private static final String PROPERTY_URL_SAFETYLEGAL = "ro.url.safetylegal";
+    private static final String PROPERTY_DEVICE_PROCESSOR = "ro.device.processor";
     private static final String PROPERTY_SELINUX_STATUS = "ro.build.selinux";
     private static final String KEY_KERNEL_VERSION = "kernel_version";
     private static final String KEY_BUILD_NUMBER = "build_number";
@@ -117,6 +118,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         // Remove selinux information if property is not present
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_SELINUX_STATUS,
                 PROPERTY_SELINUX_STATUS);
+
+        // Remove processor information if PROPERTY_DEVICE_PROCESSOR is not present
+        removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_DEVICE_PROCESSOR,
+                PROPERTY_DEVICE_PROCESSOR);
 
         // Remove Safety information preference if PROPERTY_URL_SAFETYLEGAL is not set
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_SAFETY_LEGAL,
@@ -432,6 +437,9 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 final List<String> keys = new ArrayList<String>();
                 if (isPropertyMissing(PROPERTY_SELINUX_STATUS)) {
                     keys.add(KEY_SELINUX_STATUS);
+                }
+                if (isPropertyMissing(PROPERTY_DEVICE_PROCESSOR)) {
+                    keys.add(KEY_DEVICE_PROCESSOR);
                 }
                 if (isPropertyMissing(PROPERTY_URL_SAFETYLEGAL)) {
                     keys.add(KEY_SAFETY_LEGAL);
