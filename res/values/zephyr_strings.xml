@@ -121,6 +121,7 @@
 
     <!-- Double tap-to-sleep -->
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
+<<<<<<< HEAD:res/values/zephyr_strings.xml
     <string name="double_tap_to_sleep_summary">Enabling this option works for both status bar and lockscreen</string>
 
     <!--- Volume key cursor control -->
@@ -226,4 +227,10 @@
     <!-- Qucik unlock -->
     <string name="unlock_quick_unlock_control_title">Quick unlock</string>
     <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+
+    <!-- Heads up -->
+    <string name="headsup_section_header">Heads up notifications</string>
+    <string name="heads_up_notifications">Heads up</string>
+    <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
+    <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
 </resources>
