@@ -71,6 +71,7 @@
     <string name="notification_light_default_value">Default</string>
     <string name="notification_light_missed_call_title">Missed call</string>
     <string name="notification_light_voicemail_title">Voicemail</string>
+    <string name="allow_lights_title">Allow notification lights in do not disturb mode</string>
 
     <!-- Zephyr Settings menus -->
     <string name="simpleaosp_settings_title">pimp my rom</string>
