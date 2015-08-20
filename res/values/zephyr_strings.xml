@@ -557,4 +557,5 @@
     <string name="qs_action_delete">Delete</string>
     <string name="qs_action_add">Add</string>
     <string name="qs_action_no_more_tiles">No more tiles available</string>
+    <string name="quick_settings_reset_message">Reset quick settings tiles?</string>
 </resources>
