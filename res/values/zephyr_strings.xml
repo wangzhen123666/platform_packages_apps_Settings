@@ -217,4 +217,9 @@
     <string name="link_volume_option_title">Link ring and notification volume</string>
     <string name="notification_volume_option_title">Notification volume</string>
     <string name="ring_notification_volume_option_title">Ring and notification volume</string>
+
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">Toast icon</string>
+    <string name="summary_toast_icons_enabled">Toast icon badge is enabled</string>
+    <string name="summary_toast_icons_disabled">Toast icon badge is disabled</string>
 </resources>
