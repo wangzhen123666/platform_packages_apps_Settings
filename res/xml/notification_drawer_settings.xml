@@ -14,9 +14,14 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-    <!-- Default value for battery_light_enabled preference -->
-    <bool name="def_battery_light_enabled">true</bool>
-    <!-- Default value for battery light pulse -->
-    <bool name="def_battery_light_pulse">true</bool>
-</resources>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/notification_drawer_title">
+
+    <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
+        android:key="qs_show_brightness_slider"
+        android:title="@string/qs_brightness_slider_title_eos"
+        android:summary="@string/qs_brightness_slider_summary"
+        android:defaultValue="true" />
+</PreferenceScreen>
+
+
