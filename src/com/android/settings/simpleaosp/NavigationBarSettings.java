@@ -38,7 +38,7 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.APPLICATION;
+        return MetricsLogger.NAV_BAR_SETTINGS;
     }
 }
 

@@ -116,7 +116,7 @@ public class AdditionalSettings extends SettingsPreferenceFragment {
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.APPLICATION;
+        return MetricsLogger.ADDITIONAL_SETTINGS;
     }
 }
 

@@ -538,6 +538,6 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.APPLICATION;
+        return MetricsLogger.NOTIFICATION_LIGHT_SETTINGS;
     }
 }
