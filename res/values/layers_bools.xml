@@ -16,4 +16,6 @@
 <resources>
     <!-- Define whether you want Settings Dashboard tiles to load external drawables by default (for example, see the Google shortcut) -->
     <bool name="config_useExternalDrawables">true</bool>
+    <!-- Shortcur picker -->
+    <dimen name="shortcut_picker_left_padding">40dip</dimen>
 </resources>
