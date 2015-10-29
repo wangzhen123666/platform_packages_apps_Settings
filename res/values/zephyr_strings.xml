@@ -610,4 +610,9 @@
     <string name="four_second">4 s</string>
     <string name="fourhalf_second">4.5 s</string>
     <string name="five_second">5 s</string>
+
+    <!-- Status bar brightness control -->
+    <string name="status_bar_toggle_brightness">Brightness control</string>
+    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across status bar</string>
+    <string name="status_bar_toggle_info">Automatic brightness must be disabled</string>
 </resources>
