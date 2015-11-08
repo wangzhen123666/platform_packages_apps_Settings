@@ -409,6 +409,11 @@
     <string name="shortcut_action_help_delete_last_entry">Removing every %1$s in the list will disable the feature entirely.</string>
     <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Removing every %1$s in the list will disable the second pie layer entirely.</string>
 
+    <!-- CM Lockscreen shortcuts -->
+    <string name="lockscreen_targets_message">Bottom shortcuts</string>
+    <string name="lockscreen_targets_summary">Change the bottom corner shortcuts</string>
+
+    <!-- CM shortcut picker -->
     <string name="shortcut_picker_choose_longpress_action">Choose longpress action:</string>
     <string name="shortcut_picker_choose_new_action">Choose new action:</string>
     <string name="shortcut_picker_reassign_action">Reassign action:</string>

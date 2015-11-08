@@ -31,6 +31,14 @@
         android:title="@string/lockscreen_wallpaper_title"
         android:fragment="com.android.settings.candy.LockscreenWallpaperChanger" />
 
+        <PreferenceScreen
+         android:title="@string/lockscreen_targets_message" 
+         android:summary="@string/lockscreen_targets_summary" >
+        <intent
+         android:targetPackage="com.android.systemui"
+         android:targetClass="com.android.systemui.cm.LockscreenShortcutsActivity" />
+        </PreferenceScreen>
+
     </PreferenceCategory>
  
 </PreferenceScreen>
