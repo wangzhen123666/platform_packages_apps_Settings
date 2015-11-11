@@ -22,9 +22,10 @@
     <color name="dslv_icon_dark">#ff009688</color>
     <color name="dslv_float_background_color">#ff1b1f23</color>
 
-
     <color name="divider">#1fffffff</color>
     <color name="ripple_material_dark">#4dffffff</color>
+    <color name="theme_accent">#ff009688</color>
+    <color name="theme_accent">#ff009688</color>
 
     <!-- Expanded desktop -->
     <drawable name="expanded_item_bg_activated">@color/card_background</drawable>
