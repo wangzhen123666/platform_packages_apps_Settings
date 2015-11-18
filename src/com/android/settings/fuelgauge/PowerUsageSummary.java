@@ -41,6 +41,7 @@ import com.android.internal.os.BatterySipper.DrainType;
 import com.android.internal.os.PowerProfile;
 import com.android.settings.HelpUtils;
 import com.android.settings.R;
+import com.android.settings.custom.BatteryBarSettings;
 import com.android.settings.Settings.HighPowerApplicationsActivity;
 import com.android.settings.SettingsActivity;
 import com.android.settings.applications.ManageApplications;
@@ -69,6 +70,7 @@ public class PowerUsageSummary extends PowerUsageBase {
     private static final int MENU_BATTERY_SAVER = Menu.FIRST + 2;
     private static final int MENU_HIGH_POWER_APPS = Menu.FIRST + 3;
     private static final int MENU_HELP = Menu.FIRST + 4;
+    private static final int MENU_BATTERY_BAR = Menu.FIRST + 5;
 
     private BatteryHistoryPreference mHistPref;
     private PreferenceGroup mAppListGroup;
@@ -135,6 +137,9 @@ public class PowerUsageSummary extends PowerUsageBase {
                     .setAlphabeticShortcut('t');
         }
 
+        MenuItem batteryBar = menu.add(0, MENU_BATTERY_BAR, 0, R.string.battery_bar_title);
+        batteryBar.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+
         MenuItem batterySaver = menu.add(0, MENU_BATTERY_SAVER, 0, R.string.battery_saver);
         batterySaver.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
 
@@ -158,6 +163,10 @@ public class PowerUsageSummary extends PowerUsageBase {
                     mStatsType = BatteryStats.STATS_SINCE_CHARGED;
                 }
                 refreshStats();
+                return true;
+            case MENU_BATTERY_BAR:
+                sa.startPreferencePanel(BatteryBarSettings.class.getName(), null,
+                        R.string.battery_bar_title, null, null, 0);
                 return true;
             case MENU_BATTERY_SAVER:
                 sa.startPreferencePanel(BatterySaverSettings.class.getName(), null,
