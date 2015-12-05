@@ -74,7 +74,7 @@
     <string name="allow_lights_title">Allow notification lights in do not disturb mode</string>
 
     <!-- Zephyr Settings menus -->
-    <string name="zephyr_settings_title">pimp my rom</string>
+    <string name="zephyr_settings_title">The Vortex</string>
     <string name="keywords_zephyr">ZephyrOS</string>
     <!-- Lock screen settings -->
     <string name="lock_screen_title">Lock screen</string>
@@ -113,7 +113,7 @@
     <string name="power_menu_sound_title">Sound panel</string>
 
     <!--Navigation bar category -->
-    <string name="navigation_bar_title">Navigation stuffs</string>
+    <string name="navigation_bar_title">Nav/recents</string>
 
     <!-- Double Tap Navbar to Sleep -->
     <string name="double_tap_sleep_nav_bar_title">Double-tap to sleep</string>
@@ -121,7 +121,7 @@
 
     <!-- Double tap-to-sleep -->
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
-    <string name="double_tap_to_sleep_summary">Double-tap on the status bar or top third and bottom shortcut area of the lock screen to turn off the display</string>
+    <string name="double_tap_to_sleep_summary">Enabling this option works for both status bar and lockscreen</string>
 
     <!--- Volume key cursor control -->
     <string name="volume_rocker_screen_title">Volume rocker</string>
@@ -212,4 +212,9 @@
     <string name="recents_search_bar">Recents panel Search bar</string>
     <string name="recents_searchbar_summary_enabled">Search bar in recents menu is enabled</string>
     <string name="recents_searchbar_summary_disabled">Search bar in recents menu is disabled</string>
+
+    <!-- Linked / unlinked notification volume -->
+    <string name="link_volume_option_title">Link ring and notification volume</string>
+    <string name="notification_volume_option_title">Notification volume</string>
+    <string name="ring_notification_volume_option_title">Ring and notification volume</string>
 </resources>
