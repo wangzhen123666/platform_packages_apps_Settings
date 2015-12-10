@@ -17,6 +17,9 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/notification_drawer_title">
 
+<PreferenceCategory
+        android:title="@string/qs_category_title">
+
     <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
         android:key="qs_show_brightness_slider"
         android:title="@string/qs_brightness_slider_title_eos"
@@ -39,6 +42,24 @@
         android:key="qs_use_four_columns"
         android:title="@string/qs_four_columns_title"
         android:defaultValue="false" />
+
+    <PreferenceScreen
+            android:title="@string/status_bar_icon_blacklist_title"
+            android:summary="@string/status_bar_icon_blacklist_summary" >
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.TunerActivity" />
+    </PreferenceScreen>
+    
+    <PreferenceScreen
+                android:title="@string/quick_settings_title"
+                android:summary="@string/quick_settings_summary" >
+            <intent android:action="android.intent.action.MAIN"
+                   android:targetPackage="com.android.systemui"
+                   android:targetClass="com.android.systemui.tuner.QsActivity" />
+    </PreferenceScreen>
+</PreferenceCategory>
+
 </PreferenceScreen>
 
 

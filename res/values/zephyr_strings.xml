@@ -507,7 +507,8 @@
     <string name="credits">Buy them a beer!!!</string>
 
     <string name="notification_drawer_title">Notification drawer</string>
- 
+    <string name="qs_category_title">Quick Settings</string> 
+    
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_title_eos">Brightness slider</string>
     <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
@@ -533,6 +534,12 @@
     <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
     <string name="expanded_desktop_title">Expanded desktop options</string>
 
+    <!-- Location tile -->
     <string name="qs_advanced_location_title">Advanced location quick settings</string>
     <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
+
+    <string name="quick_settings_title">Quick Settings/Tiles</string>
+    <string name="quick_settings_summary">Configure quick settings tiles</string>
+    <string name="status_bar_icon_blacklist_title">Status bar icons</string>
+    <string name="status_bar_icon_blacklist_summary">Configure what icons are shown on status bar</string>
 </resources>
