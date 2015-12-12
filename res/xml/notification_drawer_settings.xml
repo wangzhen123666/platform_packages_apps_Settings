@@ -20,6 +20,11 @@
 <PreferenceCategory
         android:title="@string/qs_category_title">
 
+    <PreferenceScreen
+        android:key="qs_order"
+        android:title="@string/qs_order_title"
+        android:fragment="com.android.settings.cyanogenmod.qs.QSTiles" />
+
     <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
         android:key="qs_show_brightness_slider"
         android:title="@string/qs_brightness_slider_title_eos"
@@ -50,14 +55,7 @@
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.TunerActivity" />
     </PreferenceScreen>
-    
-    <PreferenceScreen
-                android:title="@string/quick_settings_title"
-                android:summary="@string/quick_settings_summary" >
-            <intent android:action="android.intent.action.MAIN"
-                   android:targetPackage="com.android.systemui"
-                   android:targetClass="com.android.systemui.tuner.QsActivity" />
-    </PreferenceScreen>
+</PreferenceScreen>
 </PreferenceCategory>
 
 </PreferenceScreen>

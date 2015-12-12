@@ -539,8 +539,6 @@
     <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
 
     <!-- Quick Settings -->
-    <string name="quick_settings_title">Quick Settings/Tiles</string>
-    <string name="quick_settings_summary">Configure quick settings tiles</string>
     <string name="status_bar_icon_blacklist_title">Status bar icons</string>
     <string name="status_bar_icon_blacklist_summary">Configure what icons are shown on status bar</string>
     <string name="qs_order_title">Select and order tiles</string>
