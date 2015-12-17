@@ -32,9 +32,6 @@
     <color name="expanded_button_color_normal">#4CAF50</color>
     <color name="expanded_button_color_close">#F44336</color>
 
-    <!-- Gesture Anywhere -->
-    <color name="ga_gesture_color">@android:color/holo_blue_light</color>
-
     <!-- Dashboard boarder color -->
     <color name="dashboard_border_color">?android:attr/colorAccent</color>
 
@@ -63,4 +60,11 @@
     <color name="colorpick_primary">@*android:color/material_blue_grey_900</color>
     <color name="colorpick_primary_dark">@*android:color/material_blue_grey_950</color>
     <color name="colorpick_accent">@*android:color/material_deep_teal_500</color>
+    
+    <!-- Qs tiles -->
+    <color name="qs_tile_tint_color">@color/col_accnt</color>
+    <color name="qs_text_color">@color/list_item_title</color>
+    <color name="qs_tile_default_background_color">@color/cardlayout_bg</color>
+    <color name="col_accnt">#ffffff</color>
+    <color name="list_item_title">#ffeeeeee</color>
 </resources>
