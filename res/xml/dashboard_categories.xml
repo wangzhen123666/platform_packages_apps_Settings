@@ -245,7 +245,7 @@
         <!-- Privacy -->
         <dashboard-tile
                 android:id="@+id/privacy_settings_candy"
-                android:title="@string/privacy_settings_title"
+                android:title="@string/privacy_guard_tile"
                 android:fragment="com.android.settings.candy.PrivacySettings"
                 android:icon="@drawable/ic_settings_privacy"
                 />
