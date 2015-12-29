@@ -54,8 +54,8 @@ public class PrivacyGuardPrefs extends SettingsPreferenceFragment implements
         mPrivacyGuardDefault = (SwitchPreference) findPreference(KEY_PRIVACY_GUARD_DEFAULT);
         mPrivacyGuardDefault.setOnPreferenceChangeListener(this);
 
-        mPrivacyGuardDefault.setChecked(Settings.System.getInt(getContentResolver(),
-                Settings.System.PRIVACY_GUARD_DEFAULT, 0) == 1);
+        mPrivacyGuardDefault.setChecked(Settings.Candy.getInt(getContentResolver(),
+                Settings.Candy.PRIVACY_GUARD_DEFAULT, 0) == 1);
     }
 
     @Override
@@ -74,8 +74,8 @@ public class PrivacyGuardPrefs extends SettingsPreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mPrivacyGuardDefault) {
             boolean value = (Boolean) newValue;
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.PRIVACY_GUARD_DEFAULT, value ? 1 : 0);
+            Settings.Candy.putInt(getContentResolver(),
+                    Settings.Candy.PRIVACY_GUARD_DEFAULT, value ? 1 : 0);
             return true;
         }
         return false;
