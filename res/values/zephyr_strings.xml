@@ -707,4 +707,8 @@
     <string name="hardware_keys_action_in_app_search">In-app search</string>
     <string name="hardware_keys_action_launch_camera">Launch camera</string>
     <string name="hardware_keys_action_sleep">Turn screen off</string>
+
+    <!-- Membar recents -->
+    <string name="recents_show_membar_title">Memory bar</string>
+    <string name="recents_show_membar_summary">Show a bar with the device\'s available memory</string>
 </resources>
