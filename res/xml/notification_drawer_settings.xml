@@ -23,6 +23,7 @@
     <PreferenceScreen
         android:key="qs_order"
         android:title="@string/qs_order_title"
+        android:summary="@string/qs_tiles_summary"
         android:fragment="com.android.settings.cyanogenmod.qs.QSTiles" />
 
     <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
