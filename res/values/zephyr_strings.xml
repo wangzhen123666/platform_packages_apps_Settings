@@ -738,4 +738,8 @@
    <string name="lockscreen_wallpaper_set_title">Set new wallpaper</string>
    <string name="lockscreen_wallpaper_clear_title">Return to default</string>
    <string name="reset_lockscreen_wallpaper">Lockscreen wallpaper set back to default</string>
+
+   <!--Time Contexual Header -->
+   <string name="status_bar_custom_header_title">Time Contextual Header</string>
+   <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
 </resources>
