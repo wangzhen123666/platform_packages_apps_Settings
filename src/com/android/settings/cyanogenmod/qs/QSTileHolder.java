@@ -75,7 +75,7 @@ public class QSTileHolder {
                 stringId = R.string.qs_tile_airplane_mode;
                 break;
             case QSConstants.TILE_ROTATION:
-                resourceName = "ic_portrait_to_auto_rotate";
+                resourceName = "ic_qs_rotation_locked";
                 stringId = R.string.qs_tile_display_rotation;
                 break;
             case QSConstants.TILE_FLASHLIGHT:
@@ -93,6 +93,34 @@ public class QSTileHolder {
             case QSConstants.TILE_HOTSPOT:
                 resourceName = "ic_hotspot_disable";
                 stringId = R.string.qs_tile_hotspot;
+                break;
+            case QSConstants.TILE_VOLUME:
+                resourceName = "ic_qs_volume_panel";
+                stringId = R.string.qs_tile_volume_panel;
+                break;
+            case QSConstants.TILE_SCREEN_TIMEOUT:
+                resourceName = "ic_qs_screen_timeout_vector";
+                stringId = R.string.qs_tile_screen_timeout;
+                break; 
+            case QSConstants.TILE_SCREEN_OFF:
+                resourceName = "ic_qs_power";
+                stringId = R.string.qs_tile_screen_off;
+                break;
+            case QSConstants.TILE_BRIGHTNESS:
+                resourceName = "ic_qs_brightness_auto_off";
+                stringId = R.string.qs_tile_brightness;
+                break;
+            case QSConstants.TILE_USB_TETHER:
+                resourceName = "ic_qs_usb_tether_on";
+                stringId = R.string.qs_tile_usb_tether;
+                break;
+            case QSConstants.TILE_SCREENSHOT:
+                resourceName = "ic_qs_screenshot";
+                stringId = R.string.qs_tile_screenshot;
+                break;
+            case QSConstants.TILE_HEADS_UP:
+                resourceName = "ic_qs_heads_up_on";
+                stringId = R.string.qs_tile_heads_up;
                 break;
             default:
                 return null;
