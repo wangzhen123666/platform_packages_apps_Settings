@@ -26,6 +26,7 @@
     <color name="ripple_material_dark">#4dffffff</color>
     <color name="theme_accent">#ff009688</color>
     <color name="theme_accent">#ff009688</color>
+    <color name="action_picker_fab_background">@color/theme_accent</color>
 
     <!-- Expanded desktop -->
     <drawable name="expanded_item_bg_activated">@color/card_background</drawable>

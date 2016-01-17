@@ -702,4 +702,19 @@
     <string name="fling_pulse_color">Pulse color</string>
     <string name="eos_fling_lavalamp_title">Turn on Lava Lamp</string>
     <string name="eos_fling_lavalamp_summary">Pulse animates a smooth lava lamp style color blend</string>
+    <string name="smartbar_interface">SmartBar</string>
+    <string name="icon_pack_picker_dialog_title">Icon packs</string>
+
+    <!-- SmartBar -->
+    <string name="smartbar_category">Smartbar</string>
+    <string name="smartbar_settings_title">Smartbar settings</string>
+    <string name="smartbar_editor_title">Toggle button editor</string>
+    <string name="smartbar_editor_summary">Medium press and drag to change position. Long press to show edit menu. Button position may be changed while menu is showing.</string>
+    <string name="smartbar_context_menu_position_title">Context buttons layout position</string>
+    <string name="smartbar_context_menu_position_summary">Set the position of contextual buttons such as menu and ime selector</string>
+    <string name="smartbar_right">Right</string>
+    <string name="smartbar_left">Left</string>
+    <string name="smartbar_factory_reset_title">Restore stock settings</string>
+    <string name="smartbar_factory_reset_summary">Smartbar will reset to a factory configuration</string>
+    <string name="smartbar_factory_reset_confirm">Are you sure you want to reset Smartbar to stock settings?</string>
 </resources>
