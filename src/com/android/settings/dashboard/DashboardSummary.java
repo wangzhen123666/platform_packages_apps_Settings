@@ -177,16 +177,25 @@ public class DashboardSummary extends InstrumentedFragment {
 
         if (!TextUtils.isEmpty(tile.iconPkg)) {
             try {
-                Drawable drawable = context.getPackageManager()
+                Drawable outsideDrawable = context.getPackageManager()
                         .getResourcesForApplication(tile.iconPkg).getDrawable(tile.iconRes, null);
-                if (!tile.iconPkg.equals(context.getPackageName()) && drawable != null) {
-                    // If this drawable is coming from outside Settings, tint it to match the color.
+                String outsideDrawableName = context.getPackageManager()
+                        .getResourcesForApplication(tile.iconPkg).getResourceEntryName(tile.iconRes);
+                Integer settingsDrawableId = context.getResources()
+                        .getIdentifier(context.getPackageName()+":drawable/"+outsideDrawableName, "drawable", context.getPackageName());
+                Boolean useExternalDrawables = context.getResources()
+                        .getBoolean(R.bool.config_useExternalDrawables);
+                // If this drawable exists in Settings and we explicitly don't want to use external drawables, use it
+                if (settingsDrawableId != 0 && !useExternalDrawables) {
+                    tileIcon.setImageResource(settingsDrawableId);
+                // Else, if this drawable is coming from outside Settings, tint it to match the color and use it.
+                } else if (!tile.iconPkg.equals(context.getPackageName()) && outsideDrawable != null) {
                     TypedValue tintColor = new TypedValue();
                     context.getTheme().resolveAttribute(com.android.internal.R.attr.colorAccent,
                             tintColor, true);
-                    drawable.setTint(tintColor.data);
+                    outsideDrawable.setTint(tintColor.data);
+                    tileIcon.setImageDrawable(outsideDrawable);
                 }
-                tileIcon.setImageDrawable(drawable);
             } catch (NameNotFoundException | Resources.NotFoundException e) {
                 tileIcon.setImageDrawable(null);
                 tileIcon.setBackground(null);
