@@ -49,11 +49,11 @@
             <intent android:action="android.settings.SHOW_MANUAL" />
         </PreferenceScreen>
 
-        <!-- Legal Information -->
+        <!-- Legal Information 
         <PreferenceScreen
                 android:key="container"
                 android:title="@string/legal_information"
-                android:fragment="com.android.settings.LegalSettings" />
+                android:fragment="com.android.settings.LegalSettings" /> -->
 
 	<!-- Credits -->
         <PreferenceScreen
@@ -71,6 +71,11 @@
         <PreferenceScreen android:key="device_feedback"
                 android:title="@string/device_feedback">
         </PreferenceScreen>
+
+        <!-- Changelog -->
+        <PreferenceScreen android:key="changelog"
+                android:title="@string/changelog_crdroid_title"
+                android:fragment="com.android.settings.crdroid.Changelog" />
 
         <!-- Device hardware model -->
         <Preference android:key="device_model"
