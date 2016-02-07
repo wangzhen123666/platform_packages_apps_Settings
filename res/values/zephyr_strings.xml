@@ -717,4 +717,7 @@
     <string name="smartbar_factory_reset_title">Restore stock settings</string>
     <string name="smartbar_factory_reset_summary">Smartbar will reset to a factory configuration</string>
     <string name="smartbar_factory_reset_confirm">Are you sure you want to reset Smartbar to stock settings?</string>
+
+    <string name="fling_logo_custom_logo_pick_title">Custom logo icon</string>
+    <string name="fling_logo_custom_logo_reset_title">Reset logo icon</string>
 </resources>
