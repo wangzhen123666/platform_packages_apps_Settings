@@ -85,6 +85,17 @@
                 android:title="@string/simpleaosp_settings_title"
                 android:fragment="com.android.settings.simpleaosp.AdditionalSettings"
                 android:icon="@drawable/ic_sysbar_quicksettings" />
+
+        <!-- Viper4Android -->
+        <dashboard-tile
+            android:id="@+id/viper_settings"
+            android:title="@string/viper_settings_title"
+            android:icon="@drawable/ic_broken_equalizer" >
+            <intent
+               android:action="android.intent.action.MAIN"
+               android:targetClass="com.vipercn.viper4android_v2.activity.ViPER4Android"
+               android:targetPackage="com.vipercn.viper4android_v2" />
+        </dashboard-tile>
         
         <!-- Home -->
         <dashboard-tile

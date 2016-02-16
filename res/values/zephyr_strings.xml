@@ -141,6 +141,9 @@
     <!-- BitSyko Layers -->
     <string name="bitsyko_layers">Layers</string>
 
+    <!--Embedded Viper4Android-->
+    <string name="viper_settings_title">Equalizer</string>
+   
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Battery icons</string>
     <string name="status_bar_battery_summary">Change battery icons</string>
