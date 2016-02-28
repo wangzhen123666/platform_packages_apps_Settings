@@ -723,4 +723,10 @@
     <string name="smartbar_button_animation_spring">Spring</string>
     <string name="fling_logo_custom_logo_pick_title">Custom logo icon</string>
     <string name="fling_logo_custom_logo_reset_title">Reset logo icon</string>
+
+    <string name="smartbar_ime_action_title">Input method actions</string>
+    <string name="smartbar_ime_action_summary">Set what buttons to show when a on-screen keyboard is showing</string>
+    <string name="smartbar_ime_action_none">None</string>
+    <string name="smartbar_ime_action_arrows">Input arrows</string>
+    <string name="smartbar_ime_action_switcher">Keyboard switcher</string>
 </resources>
