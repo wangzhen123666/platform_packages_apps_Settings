@@ -729,4 +729,6 @@
     <string name="smartbar_ime_action_none">None</string>
     <string name="smartbar_ime_action_arrows">Input arrows</string>
     <string name="smartbar_ime_action_switcher">Keyboard switcher</string>
+
+    <string name="fling_logo_custom_logo_image_pick_title">Custom logo image</string>
 </resources>
