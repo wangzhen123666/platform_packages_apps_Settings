@@ -218,6 +218,7 @@ public final class BluetoothPairingDialog extends AlertActivity implements
                 }
             }
         });
+
         mPairingView = (EditText) view.findViewById(R.id.text);
         mPairingView.addTextChangedListener(this);
         alphanumericPin.setOnCheckedChangeListener(this);
