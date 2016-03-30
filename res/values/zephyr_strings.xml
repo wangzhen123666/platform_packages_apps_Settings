@@ -489,4 +489,20 @@
     <string name="shortcut_action_torch">Torch</string>
     <string name="shortcut_action_voice_search">Voice search</string>
     <string name="shortcut_action_none">None</string>
+
+    <!-- Credits -->
+    <string name="name_1">PrinceTrishi(StarkDroid)</string>
+    <string name="name1_description">Owner of zephyrOS</string>
+    <string name="name_2">Sri Surya</string>
+    <string name="name_3">Akhil Narang</string>
+    <string name="name_4">Adarsh-MR</string>
+    <string name="name_5">BrokenRom</string>
+    <string name="name_6">BenzoRom</string>
+    <string name="name_7">AOSIP</string>
+    <string name="name_8">Slim roms</string>
+    <string name="name_9">CyanogenMod</string>
+    <string name="name_10">AOSPB</string>
+    <string name="name_11">SAOSP-M</string>
+    <string name="name_12">AOSP-RRO(base rom)</string>
+    <string name="credits">Buy them a beer!!!</string>
 </resources>

@@ -55,6 +55,12 @@
                 android:title="@string/legal_information"
                 android:fragment="com.android.settings.LegalSettings" />
 
+	<!-- Credits -->
+        <PreferenceScreen
+		android:key="credits"
+		android:title="@string/credits"
+		android:fragment="com.android.settings.zephyr.credits" />
+
         <PreferenceScreen
                 android:key="regulatory_info"
                 android:title="@string/regulatory_information">
