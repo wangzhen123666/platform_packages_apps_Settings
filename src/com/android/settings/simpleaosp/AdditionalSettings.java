@@ -85,7 +85,6 @@ public class AdditionalSettings extends SettingsPreferenceFragment {
 	    frags[0] = new StatusBarSettings();
             frags[1] = new PowerMenuActions();
             frags[2] = new NavigationBarSettings();
-            frags[3] = new PowerMenuActions();
           
         }
 
