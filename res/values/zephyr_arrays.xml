@@ -69,7 +69,9 @@
         <item>airplane</item>
         <item>users</item>
         <item>silent</item>
+    </string-array>
 
+    <!-- Battery Styles -->
     <string-array name="status_bar_battery_style_entries" translatable="false">
         <item>@string/status_bar_battery_style_icon_portrait</item>
         <item>@string/status_bar_battery_style_icon_landscape</item>

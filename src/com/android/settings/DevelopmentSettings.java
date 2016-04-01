@@ -1167,7 +1167,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         SystemProperties.set(COLOR_TEMPERATURE_PROPERTY,
                 mColorTemperaturePreference.isChecked() ? "1" : "0");
         pokeSystemProperties();
-        Toast.makeText(getActivity(), R.string.color_temperature_toast, Toast.LENGTH_LONG).show();
     }
 
     private void updateUSBAudioOptions() {
