@@ -242,8 +242,7 @@ public class ChooseLockGeneric extends SettingsActivity {
             mWaitingForConfirmation = false;
             if (requestCode == CONFIRM_EXISTING_REQUEST && resultCode == Activity.RESULT_OK) {
                 mPasswordConfirmed = true;
-                mUserPassword = data == null ? null :
-                        data.getStringExtra(ChooseLockSettingsHelper.EXTRA_KEY_PASSWORD);
+                mUserPassword = data.getStringExtra(ChooseLockSettingsHelper.EXTRA_KEY_PASSWORD);
                 updatePreferencesOrFinish();
             } else if (requestCode == ENABLE_ENCRYPTION_REQUEST
                     && resultCode == Activity.RESULT_OK) {
