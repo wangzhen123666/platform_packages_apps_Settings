@@ -1,4 +1,4 @@
-package com.android.settings.simpleaosp;
+package com.android.settings.zephyr;
 
 import android.os.Bundle;
 import android.preference.ListPreference;

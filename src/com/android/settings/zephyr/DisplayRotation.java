@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.simpleaosp;
+package com.android.settings.zephyr;
 
 import android.content.Context;
 import android.database.ContentObserver;

@@ -1,4 +1,4 @@
-package com.android.settings.simpleaosp;
+package com.android.settings.zephyr;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -17,10 +17,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.android.settings.simpleaosp.StatusBarSettings;
-import com.android.settings.simpleaosp.NavigationBarSettings;
-import com.android.settings.simpleaosp.LockScreenSettings;
-import com.android.settings.simpleaosp.PagerSlidingTabStrip;
+import com.android.settings.zephyr.StatusBarSettings;
+import com.android.settings.zephyr.NavigationBarSettings;
+import com.android.settings.zephyr.LockScreenSettings;
+import com.android.settings.zephyr.PagerSlidingTabStrip;
 import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.SettingsPreferenceFragment;

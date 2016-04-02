@@ -113,7 +113,7 @@
     <string name="power_menu_sound_title">Sound panel</string>
 
     <!--Navigation bar category -->
-    <string name="navigation_bar_title">Navigation bar</string>
+    <string name="navigation_bar_title">Navigation stuffs</string>
 
     <!-- Double Tap Navbar to Sleep -->
     <string name="double_tap_sleep_nav_bar_title">Double-tap to sleep</string>
