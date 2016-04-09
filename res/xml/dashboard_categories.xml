@@ -81,9 +81,9 @@
 
 	<!-- ZephyrOS settings -->
         <dashboard-tile
-                android:id="@+id/simpleaosp_settings"
-                android:title="@string/simpleaosp_settings_title"
-                android:fragment="com.android.settings.simpleaosp.AdditionalSettings"
+                android:id="@+id/zephyr_settings"
+                android:title="@string/zephyr_settings_title"
+                android:fragment="com.android.settings.zephyr.AdditionalSettings"
                 android:icon="@drawable/ic_sysbar_quicksettings" />
 
         <!-- Viper4Android -->

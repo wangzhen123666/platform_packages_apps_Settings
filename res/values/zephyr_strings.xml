@@ -74,8 +74,8 @@
     <string name="allow_lights_title">Allow notification lights in do not disturb mode</string>
 
     <!-- Zephyr Settings menus -->
-    <string name="simpleaosp_settings_title">pimp my rom</string>
-    <string name="keywords_simpleaosp">ZephyrOS</string>
+    <string name="zephyr_settings_title">pimp my rom</string>
+    <string name="keywords_zephyr">ZephyrOS</string>
     <!-- Lock screen settings -->
     <string name="lock_screen_title">Lock screen</string>
     <!-- Status bar-->
