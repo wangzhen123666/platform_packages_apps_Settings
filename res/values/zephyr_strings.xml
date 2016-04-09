@@ -907,4 +907,8 @@
     <!-- QS auto brightness toggle -->
     <string name="brightness_icon_title">Auto-brightness icon</string>
     <string name="brightness_icon_summary">Show a brightness icon to the left of the brighness slider to adjust auto-brightness</string>
+
+    <!-- Quick Settings edit icon -->
+    <string name="quick_settings_edit_icon_title">QS edit icon</string>
+    <string name="quick_settings_edit_icon_summary">Enable the Quick Settings edit icon in the status bar header</string>
 </resources>
