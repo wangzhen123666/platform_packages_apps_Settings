@@ -187,7 +187,7 @@ public class ShortcutPickerHelper {
                     return true;
                 }
             });
-            Builder builder = new Builder(mParent, com.android.internal.R.style.Theme_Material_BenzoDark_Dialog_Alert);
+            Builder builder = new Builder(mParent, com.android.internal.R.style.Theme_Material_Dialog_Alert);
             builder.setView(appListView);
             mAlertDialog = builder.create();
             mAlertDialog.setTitle(mParent.getString(R.string.shortcut_picker_select_activity_title));
