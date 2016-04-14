@@ -102,10 +102,10 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(resolver, Settings.System.RECENTS_CLEAR_ALL_LOCATION, 3);
             summary = R.string.recents_clear_all_location_bottom_right;
         } else if (value == 4) {
-            Settings.System.putInt(resolver, Settings.System.RECENTS_CLEAR_ALL_$
+            Settings.System.putInt(resolver, Settings.System.RECENTS_CLEAR_ALL_LOCATION, 4);
             summary = R.string.recents_clear_all_location_bottom_left;
         } else if (value == 5) {
-            Settings.System.putInt(resolver, Settings.System.RECENTS_CLEAR_ALL_$
+            Settings.System.putInt(resolver, Settings.System.RECENTS_CLEAR_ALL_LOCATION, 5);
             summary = R.string.recents_clear_all_location_bottom_center;
         }
 

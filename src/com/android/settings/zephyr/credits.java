@@ -23,7 +23,7 @@ import com.android.settings.R;
 
 import com.android.internal.logging.MetricsLogger;
 
-public class devs extends SettingsPreferenceFragment {
+public class credits extends SettingsPreferenceFragment {
 
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
