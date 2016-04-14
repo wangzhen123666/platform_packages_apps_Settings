@@ -97,12 +97,19 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
             summary = R.string.recents_clear_all_location_top_left;
  	} else if (value == 2) {
             Settings.System.putInt(resolver, Settings.System.RECENTS_CLEAR_ALL_LOCATION, 2);
-            summary = R.string.recents_clear_all_location_bottom_right;
+            summary = R.string.recents_clear_all_location_top_center;
         } else if (value == 3) {
             Settings.System.putInt(resolver, Settings.System.RECENTS_CLEAR_ALL_LOCATION, 3);
+            summary = R.string.recents_clear_all_location_bottom_right;
+        } else if (value == 4) {
+            Settings.System.putInt(resolver, Settings.System.RECENTS_CLEAR_ALL_$
             summary = R.string.recents_clear_all_location_bottom_left;
+        } else if (value == 5) {
+            Settings.System.putInt(resolver, Settings.System.RECENTS_CLEAR_ALL_$
+            summary = R.string.recents_clear_all_location_bottom_center;
         }
-        if (mRecentsClearAllLocation != null && summary != -1) {
+
+       if (mRecentsClearAllLocation != null && summary != -1) {
             mRecentsClearAllLocation.setSummary(res.getString(summary));
         }
     }	
