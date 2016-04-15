@@ -356,7 +356,7 @@ public class SettingsActivity extends Activity
             ProcessStatsSummary.class.getName(),
             DrawOverlayDetails.class.getName(),
             WriteSettingsDetails.class.getName(),
-            DisplayRotation.class.getName()
+            DisplayRotation.class.getName(),
  	    QSTiles.class.getName()
     };
 

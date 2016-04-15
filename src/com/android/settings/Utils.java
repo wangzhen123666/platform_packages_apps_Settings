@@ -1360,3 +1360,21 @@ public final class Utils {
         }
         return null;
     }
+      public static Context createPackageContext(Context context, String packageName) {
+          try {
+              return context.createPackageContext(packageName, 0);
+         } catch (PackageManager.NameNotFoundException e) {
+             // fall through
+         }
+         return null;
+     }
+ 
+     public static Drawable getNamedDrawable(Context context, String name) {
+         if (context == null) {
+             return null;
+         }
+         final Resources res = context.getResources();
+         final int resId = res.getIdentifier(name, "drawable", context.getPackageName());
+         return resId > 0 ? res.getDrawable(resId) : null;
+     }
+}
