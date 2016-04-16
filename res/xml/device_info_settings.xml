@@ -119,6 +119,24 @@
                 android:title="@string/baseband_version"
                 android:summary="@string/device_info_default"/>
 
+        <!-- GCC build info for Android -->
+        <Preference android:key="uber_android"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/uber_android"
+                android:summary="@string/uber_android_default" />
+
+	<!-- GCC build info for kernel -->
+        <Preference android:key="uber_kernel"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/uber_kernel"
+                android:summary="@string/uber_kernel_default" />
+
+	<!-- GCC build flags info -->
+        <Preference android:key="uber_flags"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/uber_flags"
+                android:summary="@string/uber_flags_default" />
+
         <!-- Device Kernel version -->
         <Preference android:key="kernel_version"
                 style="?android:preferenceInformationStyle"

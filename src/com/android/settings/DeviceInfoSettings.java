@@ -84,6 +84,12 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
     private static final String KEY_CREDITS = "credits";
     private static final String KEY_DEVICE_MAINTAINER = "device_maintainer";
+    private static final String PROPERTY_UBER_ANDROID = "ro.uber.android";
+    private static final String PROPERTY_UBER_KERNEL = "ro.uber.kernel";
+    private static final String PROPERTY_UBER_FLAGS = "ro.uber.flags";
+    private static final String KEY_UBER_ANDROID = "uber_android";
+    private static final String KEY_UBER_KERNEL = "uber_kernel";
+    private static final String KEY_UBER_FLAGS = "uber_flags";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -130,8 +136,12 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setStringSummary(KEY_DEVICE_MODEL, Build.MODEL);
         setStringSummary(KEY_BUILD_NUMBER, Build.DISPLAY);
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
-        findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
         setMaintainerSummary(KEY_DEVICE_MAINTAINER, "ro.zephyr.maintainer");
+        setValueSummary(KEY_UBER_ANDROID, PROPERTY_UBER_ANDROID);
+        setValueSummary(KEY_UBER_KERNEL, PROPERTY_UBER_KERNEL);
+        setValueSummary(KEY_UBER_FLAGS, PROPERTY_UBER_FLAGS);
+        setStringSummary(KEY_KERNEL_VERSION, getFormattedKernelVersion());
+        findPreference(KEY_KERNEL_VERSION).setEnabled(true);
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
@@ -148,6 +158,14 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         // Remove Safety information preference if PROPERTY_URL_SAFETYLEGAL is not set
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_SAFETY_LEGAL,
                 PROPERTY_URL_SAFETYLEGAL);
+
+        // Remove UBERTC information if property is not present
+        removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_UBER_ANDROID,
+                PROPERTY_UBER_ANDROID);
+        removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_UBER_KERNEL,
+                PROPERTY_UBER_KERNEL);
+        removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_UBER_FLAGS,
+                PROPERTY_UBER_FLAGS);
 
         // Remove Equipment id preference if FCC ID is not set by RIL
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_EQUIPMENT_ID,
@@ -209,7 +227,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference.getKey().equals(KEY_FIRMWARE_VERSION)) {
+        String prefKey = preference.getKey();
+	if (prefKey.equals(KEY_FIRMWARE_VERSION)) {
             System.arraycopy(mHits, 1, mHits, 0, mHits.length-1);
             mHits[mHits.length-1] = SystemClock.uptimeMillis();
             if (mHits[0] >= (SystemClock.uptimeMillis()-500)) {
@@ -285,6 +304,9 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             if (b.getBoolean(CarrierConfigManager.KEY_CI_ACTION_ON_SYS_UPDATE_BOOL)) {
                 ciActionOnSysUpdate(b);
             }
+        } else if (prefKey.equals(KEY_KERNEL_VERSION)) {
+            setStringSummary(KEY_KERNEL_VERSION, getKernelVersion());
+            return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
@@ -388,6 +410,20 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             return reader.readLine();
         } finally {
             reader.close();
+        }
+    }
+
+    private String getKernelVersion() {
+        String procVersionStr;
+        try {
+            procVersionStr = readLine(FILENAME_PROC_VERSION);
+            return procVersionStr;
+        } catch (IOException e) {
+            Log.e(LOG_TAG,
+               "IO Exception when getting kernel version for Device Info screen",
+                 e);
+
+            return "Unavailable";
         }
     }
 
