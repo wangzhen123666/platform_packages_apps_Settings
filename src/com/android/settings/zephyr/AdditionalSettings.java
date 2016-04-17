@@ -43,7 +43,7 @@ public class AdditionalSettings extends SettingsPreferenceFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mContainer = container;
 	final ActionBar actionBar = getActivity().getActionBar();
-        actionBar.setIcon(R.drawable.ic_settings_buttons);
+        actionBar.setIcon(R.drawable.ic_vortex);
 
         View view = inflater.inflate(R.layout.additional_settings, container, false);
         mViewPager = (ViewPager) view.findViewById(R.id.pager);
