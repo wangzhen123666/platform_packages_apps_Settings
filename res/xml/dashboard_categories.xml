@@ -99,7 +99,7 @@
                 android:id="@+id/zephyr_settings"
                 android:title="@string/zephyr_settings_title"
                 android:fragment="com.android.settings.zephyr.AdditionalSettings"
-                android:icon="@drawable/ic_sysbar_quicksettings" />
+                android:icon="@drawable/ic_vortex" />
 
         <!-- Viper4Android -->
         <dashboard-tile
