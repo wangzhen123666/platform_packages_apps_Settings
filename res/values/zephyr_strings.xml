@@ -578,9 +578,6 @@
     <string name="device_maintainer">Device maintainer</string>
     <string name="device_maintainers">Device maintainers</string>
 
-    <!-- Navigation bar toggle -->
-    <string name="navbar_enable_bar">Enable</string>
-
     <!-- Doze pulse options -->
     <string name="summary_doze_enabled">Enabled</string>
     <string name="summary_doze_disabled">Disabled</string>
