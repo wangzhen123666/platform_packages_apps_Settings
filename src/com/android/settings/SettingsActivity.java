@@ -78,7 +78,6 @@ import com.android.settings.applications.ProcessStatsSummary;
 import com.android.settings.applications.ProcessStatsUi;
 import com.android.settings.applications.UsageAccessDetails;
 import com.android.settings.applications.WriteSettingsDetails;
-import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothSettings;
 import com.android.settings.zephyr.DisplayRotation;
 import com.android.settings.cyanogenmod.qs.QSTiles;
@@ -358,8 +357,7 @@ public class SettingsActivity extends Activity
             DrawOverlayDetails.class.getName(),
             WriteSettingsDetails.class.getName(),
             DisplayRotation.class.getName(),
- 	    QSTiles.class.getName(),
-            BlacklistSettings.class.getName()
+ 	    QSTiles.class.getName()
     };
 
 
