@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
+=======
+>>>>>>> a2eaa56... Add back blacklist settings. [Squashed]
 <!--
      Copyright (C) 2014 The CyanogenMod Project
 
@@ -20,4 +23,8 @@
     <ImageView
             style="@style/floating_action_button_image"
             android:src="@drawable/ic_menu_add_white"/>
+<<<<<<< HEAD
 </FrameLayout>
+=======
+</FrameLayout>
+>>>>>>> a2eaa56... Add back blacklist settings. [Squashed]
