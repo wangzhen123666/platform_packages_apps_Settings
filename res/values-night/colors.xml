@@ -5,8 +5,4 @@
     <color name="switchbar_background_color">@*android:color/material_grey_850</color>
     <color name="switch_accent_color">@*android:color/material_deep_teal_500</color>
     <color name="dslv_float_background_color">#ff1b1f23</color>
-
-    <!-- BlackList colors -->
-    <color name="blacklist_enabled">#DD2C00</color>
-    <color name="blacklist_disabled">#D7D7D7</color>
 </resources>

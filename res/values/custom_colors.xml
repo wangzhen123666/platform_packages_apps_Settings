@@ -67,8 +67,4 @@
     <color name="qs_tile_default_background_color">@color/cardlayout_bg</color>
     <color name="col_accnt">#ffffff</color>
     <color name="list_item_title">#ffeeeeee</color>
-
-    <!-- BlackList colors -->
-    <color name="blacklist_enabled">#DD2C00</color>
-    <color name="blacklist_disabled">#D7D7D7</color>
 </resources>
