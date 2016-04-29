@@ -721,4 +721,14 @@
     <!-- UBER GCC build flags info -->
     <string name="uber_flags">Build flags</string>
     <string name="uber_flags_default">None</string>
+
+    <!-- Lock screen (preference screen) -->
+    <string name="lock_screen_visualizer_settings_title">Music visualizer</string>
+    <string name="lock_screen_visualizer_settings_summary">Customize the music visualizer</string>
+
+    <!-- Lock screen visualizer settings -->
+    <string name="show_title">Show</string>
+    <string name="visualizer_show_summary">Enable to show the music visualizer on the lock screen</string>
+    <string name="visualizer_use_custom_color_title">Customize the color</string>
+    <string name="visualizer_use_custom_color_summary">Enable to use a custom color, disable to create the color from the lock screen background automatically</string>
 </resources>

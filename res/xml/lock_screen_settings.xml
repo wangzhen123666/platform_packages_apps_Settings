@@ -20,6 +20,12 @@
              <extra android:name="fragment" android:value="com.android.settings.slim.fragments.LockscreenShortcutFragment" />
         </PreferenceScreen>
 
+        <PreferenceScreen
+        android:key="lock_screen_visualizer_settings"
+        android:title="@string/lock_screen_visualizer_settings_title"
+	android:summary="@string/lock_screen_visualizer_settings_summary"
+        android:fragment="com.android.settings.candy.LockScreenVisualizerSettings" />
+
     </PreferenceCategory>
  
 </PreferenceScreen>
