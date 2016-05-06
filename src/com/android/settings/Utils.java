@@ -70,6 +70,7 @@ import android.provider.ContactsContract.Contacts;
 import android.provider.ContactsContract.Data;
 import android.provider.ContactsContract.Profile;
 import android.provider.ContactsContract.RawContacts;
+import android.provider.Settings;
 import android.service.persistentdata.PersistentDataBlockManager;
 import android.telephony.ServiceState;
 import android.telephony.TelephonyManager;
@@ -1395,6 +1396,7 @@ public final class Utils {
         }
         return null;
     }
+
       public static Context createPackageContext(Context context, String packageName) {
           try {
               return context.createPackageContext(packageName, 0);
@@ -1412,4 +1414,9 @@ public final class Utils {
          final int resId = res.getIdentifier(name, "drawable", context.getPackageName());
          return resId > 0 ? res.getDrawable(resId) : null;
      }
+
+    public static boolean isAirplaneModeEnabled(Context context) {
+        return Settings.Global.getInt(context.getContentResolver(),
+                Settings.Global.AIRPLANE_MODE_ON, 0) != 0;
+    }
 }
