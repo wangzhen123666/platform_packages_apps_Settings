@@ -39,8 +39,9 @@
     <string name="picker_activities">Activities</string>
     <string name="select_custom_app_title">Select custom app</string>
     <string name="select_custom_activity_title">Select custom activity</string>
-  
-    <!-- Notification light dialogs -->
+    <string name="choose_action_title">Choose action</string>  
+ 
+   <!-- Notification light dialogs -->
     <string name="edit_light_settings">Edit light settings</string>
     <string name="pulse_speed_title">Pulse length and speed</string>
     <string name="default_time">Normal</string>
@@ -733,8 +734,14 @@
     <string name="smartbar_ime_action_switcher">Keyboard switcher</string>
 
     <string name="fling_logo_custom_logo_image_pick_title">Custom logo image</string>
+    <string name="action_entry_default_action">Default settings</string>
+    <string name="action_entry_custom_action">Select custom action</string> 
+    <string name="action_entry_select_app">Select application</string>
+    <string name="action_value_default_action">action_default</string>
+    <string name="action_value_select_app">action_app</string>
+    <string name="action_value_custom_action">action_custom</string>
 
-    <!-- Navbar -->
+   <!-- Navbar -->
     <string name="navigation_bar_size_title">Bar size</string>
     <string name="portrait_title">Portrait height</string>
     <string name="land_vert_title">Landscape width</string>
@@ -747,4 +754,5 @@
     <string name="navbar_general_title">Advanced</string>
     <string name="navigation_bar_left_title">Left-handed mode</string>
     <string name="navigation_bar_left_summary">Place the navigation bar on the left side of the screen in landscape mode</string>
+    <string name="aosp_navigation_bar">Navigation bar</string>
 </resources>

@@ -361,7 +361,7 @@ public class SettingsActivity extends Activity
             DrawOverlayDetails.class.getName(),
             WriteSettingsDetails.class.getName(),
             DisplayRotation.class.getName(),
- 	    QSTiles.class.getName()
+ 	    QSTiles.class.getName(),
             BatteryBarSettings.class.getName(),
             NavbarSettings.class.getName(),
             FlingSettings.class.getName(),
