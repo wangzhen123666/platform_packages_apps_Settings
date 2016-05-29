@@ -31,6 +31,8 @@ import static android.provider.Settings.System.SCREEN_BRIGHTNESS_MODE;
 import static android.provider.Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC;
 import static android.provider.Settings.System.SCREEN_BRIGHTNESS_MODE_MANUAL;
 import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT;
+import static android.provider.Settings.System.SCREENSHOT_CROP_AND_SHARE;
+import static android.provider.Settings.System.SCREENSHOT_CROP_BEHAVIOR;
 
 import android.app.Activity;
 import android.app.ActivityManagerNative;
@@ -55,6 +57,7 @@ import android.os.ServiceManager;
 import android.os.SystemProperties;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.PreferenceCategory;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
@@ -103,6 +106,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String ROTATION_ANGLE_180 = "180";
     private static final String ROTATION_ANGLE_270 = "270";
 
+    private static final String KEY_CATEGORY_SCREENSHOT = "screenshot";
+    private static final String KEY_SCREENSHOT_CROP_AND_SHARE = "screenshot_crop_and_share";
+    private static final String KEY_SCREENSHOT_CROP_BEHAVIOR = "screenshot_crop_behavior";
 
     private PreferenceScreen mDisplayRotationPreference;
     private WarnedListPreference mFontSizePref;
@@ -122,6 +128,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mCameraDoubleTapPowerGesturePreference;
     private SwitchPreference mVolumeWake;
     private ListPreference mLcdDensityPreference;
+    private SwitchPreference mScreenshotCropAndSharePreference;
+    private SwitchPreference mScreenshotCropBehaviorPreference;
 
     @Override
     protected int getMetricsCategory() {
@@ -248,6 +256,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             removePreference(KEY_DISPLAY_ROTATION);
         }
 
+        PreferenceCategory screenshotPrefs = (PreferenceCategory)
+                findPreference(KEY_CATEGORY_SCREENSHOT);
+
         mNightModePreference = (ListPreference) findPreference(KEY_NIGHT_MODE);
         if (mNightModePreference != null) {
             final UiModeManager uiManager = (UiModeManager) getSystemService(
@@ -291,8 +302,26 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mWakeUpOptions.removePreference(findPreference(KEY_PROXIMITY_WAKE));
             Settings.System.putInt(getContentResolver(), Settings.System.PROXIMITY_ON_WAKE, 1);
         }
-    }
 
+        mScreenshotCropAndSharePreference = (SwitchPreference) findPreference(KEY_SCREENSHOT_CROP_AND_SHARE);
+        if (mScreenshotCropAndSharePreference != null) {
+            mScreenshotCropAndSharePreference.setOnPreferenceChangeListener(this);
+        } else {
+            if (screenshotPrefs != null && mScreenshotCropAndSharePreference != null) {
+                screenshotPrefs.removePreference(mScreenshotCropAndSharePreference);
+            }
+        }
+
+	 mScreenshotCropBehaviorPreference = (SwitchPreference) findPreference(KEY_SCREENSHOT_CROP_BEHAVIOR);
+        if (mScreenshotCropBehaviorPreference != null) {
+            mScreenshotCropBehaviorPreference.setOnPreferenceChangeListener(this);
+        } else {
+            if (screenshotPrefs != null && mScreenshotCropBehaviorPreference != null) {
+                screenshotPrefs.removePreference(mScreenshotCropBehaviorPreference);
+            }
+        }
+
+     }
     private static boolean allowAllRotations(Context context) {
         return Resources.getSystem().getBoolean(
                 com.android.internal.R.bool.config_allowAllRotations);
@@ -552,6 +581,17 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     getContentResolver(), CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED, 0);
             mCameraDoubleTapPowerGesturePreference.setChecked(value == 0);
         }
+
+        // Update crop and share if it is available.
+        if (mScreenshotCropAndSharePreference != null) {
+            int value = Settings.System.getInt(getContentResolver(), SCREENSHOT_CROP_AND_SHARE, 1);
+            mScreenshotCropAndSharePreference.setChecked(value != 0);
+        }
+
+ 	if (mScreenshotCropBehaviorPreference != null) {
+            int value = Settings.System.getInt(getContentResolver(), SCREENSHOT_CROP_BEHAVIOR, 1);
+            mScreenshotCropBehaviorPreference.setChecked(value != 0);
+        }
     }
 
     private void updateScreenSaverSummary() {
@@ -680,7 +720,14 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     Settings.System.WAKEUP_WHEN_PLUGGED_UNPLUGGED,
                     (Boolean) objValue ? 1 : 0);
         }
-
+        if (preference == mScreenshotCropAndSharePreference) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getContentResolver(), SCREENSHOT_CROP_AND_SHARE, value ? 1 : 0);
+        }
+	if (preference == mScreenshotCropBehaviorPreference) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getContentResolver(), SCREENSHOT_CROP_BEHAVIOR, value ? 1 : 0);
+        }
         return true;
     }
 
