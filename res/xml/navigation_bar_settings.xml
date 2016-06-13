@@ -5,12 +5,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/navigation_bar_title">
 
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-            android:key="double_tap_sleep_navbar"
-            android:title="@string/double_tap_sleep_nav_bar_title"
-            android:summary="@string/double_tap_sleep_nav_bar_summary"
-            android:defaultValue="false" />
-
 	<PreferenceCategory
 	    android:key="recents_panel"
 	    android:title="@string/recents_panel_settings" >

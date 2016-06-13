@@ -41,7 +41,7 @@
     <string name="select_custom_activity_title">Select custom activity</string>
     <string name="choose_action_title">Choose action</string>  
  
-   <!-- Notification light dialogs -->
+    <!-- Notification light dialogs -->
     <string name="edit_light_settings">Edit light settings</string>
     <string name="pulse_speed_title">Pulse length and speed</string>
     <string name="default_time">Normal</string>
@@ -122,10 +122,6 @@
 
     <!--Navigation bar category -->
     <string name="navigation_bar_title">Nav/recents</string>
-
-    <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">Double-tap to sleep</string>
-    <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
 
     <!-- Double tap-to-sleep -->
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
