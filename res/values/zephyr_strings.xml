@@ -745,5 +745,5 @@
     <string name="navbar_general_title">Advanced</string>
     <string name="navigation_bar_left_title">Left-handed mode</string>
     <string name="navigation_bar_left_summary">Place the navigation bar on the left side of the screen in landscape mode</string>
-    <string name="aosp_navigation_bar">Navigation bar</string>
+    <string name="aosp_navigation_bar">fling/smartbar/pulse</string>
 </resources>
