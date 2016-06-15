@@ -1340,6 +1340,7 @@ public final class Utils {
             default:
                 return res.getString(R.string.radioInfo_unknown);
         }
+    }
 
     public static long getSystemTotalSpace() {
         File system = Environment.getRootDirectory();
