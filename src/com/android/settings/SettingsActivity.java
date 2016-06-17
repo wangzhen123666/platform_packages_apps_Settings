@@ -1330,16 +1330,6 @@ public class SettingsActivity extends Activity
                             UserManager.DISALLOW_DEBUGGING_FEATURES)) {
                         removeTile = true;
                     }
-                } else if (id == R.id.supersu_settings) {
-                    // Embedding into Settings is supported from SuperSU v1.85 and up
-                    boolean supported = false;
-                    try {
-                        supported = (getPackageManager().getPackageInfo("eu.chainfire.supersu", 0).versionCode >= 185);
-                    } catch (PackageManager.NameNotFoundException e) {
-                    }
-                    if (!supported) {
-                        removeTile = true;
-                    }
                 } else if (id == R.id.viper_settings) {
                     // Embedding into Settings is supported
                     boolean supported = false;
@@ -1359,16 +1349,6 @@ public class SettingsActivity extends Activity
                     if (!supported) {
                         removeTile = true;
                     }
-				} else if (id == R.id.supersu_settings) {
-                     // Embedding into Settings is supported from SuperSU v1.85 and up
-                     boolean supported = false;
-                     try {
-                         supported = (getPackageManager().getPackageInfo("eu.chainfire.supersu", 0).versionCode >= 185);
-                     } catch (PackageManager.NameNotFoundException e) {
-                     }
-                     if (!supported) {
-                         removeTile = true;
-                     }
                 }
 
                 if (UserHandle.MU_ENABLED && UserHandle.myUserId() != 0
