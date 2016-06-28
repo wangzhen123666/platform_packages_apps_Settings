@@ -7080,6 +7080,9 @@
     <!-- Description of feature to change color setting for the display [CHAR LIMIT=NONE] -->
     <string name="picture_color_mode_desc">Use sRGB</string>
 
+    <!-- BitSyko Layers -->
+    <string name="substratum_title">Substratum</string>
+
    <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
 </resources>

@@ -211,15 +211,16 @@
 
         <!-- Layers -->
         <dashboard-tile
-                android:id="@+id/bitsyko_layers"
-                android:icon="@drawable/ic_bitsyko_layers"
-                android:title="@string/bitsyko_layers">     
+                android:id="@+id/substratum"
+                android:icon="@drawable/ic_settings_substratum"
+                android:title="@string/substratum_title">     
 		<intent
                 android:action="android.intent.action.MAIN"
-                android:targetPackage="com.lovejoy777.rroandlayersmanager"
-                android:targetClass="com.lovejoy777.rroandlayersmanager.menu" />
+                android:targetPackage="projekt.substratum"
+                android:targetClass="projekt.substratum.LaunchActivity" />
 	</dashboard-tile> 
-        <!-- Location -->
+
+       <!-- Location -->
         <dashboard-tile
                 android:id="@+id/location_settings"
                 android:title="@string/location_settings_title"
