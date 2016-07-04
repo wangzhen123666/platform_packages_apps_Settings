@@ -4,7 +4,7 @@
 
     <!-- ZephyrOS version -->
    <string name="zephyr_version_title">ZephyrOS version</string>
-   <string name="zephyr_version">V3.1 Ghost</string>
+   <string name="zephyr_version">V4.0 Krypton</string>
 
 </resources>
 
