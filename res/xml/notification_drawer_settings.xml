@@ -32,13 +32,6 @@
         android:summary="@string/qs_brightness_slider_summary"
         android:defaultValue="true" />
 
-    <com.android.settings.preference.SystemSettingSwitchPreference
-            android:key="brightness_icon"
-            android:title="@string/brightness_icon_title"
-            android:summary="@string/brightness_icon_summary"
-            android:dependency="qs_show_brightness_slider"
-            android:defaultValue="false"/> 
-
     <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
         android:key="qs_location_advanced"
         android:title="@string/qs_advanced_location_title"
@@ -79,5 +72,4 @@
 </PreferenceCategory>
 
 </PreferenceScreen>
-
 
