@@ -904,7 +904,4 @@
     <string name="shortcut_action_voice_search">Voice search</string>
     <string name="shortcut_action_none">None</string>
 
-    <!-- Quick Settings edit icon -->
-    <string name="quick_settings_edit_icon_title">QS edit icon</string>
-    <string name="quick_settings_edit_icon_summary">Enable the Quick Settings edit icon in the status bar header</string>
 </resources>
