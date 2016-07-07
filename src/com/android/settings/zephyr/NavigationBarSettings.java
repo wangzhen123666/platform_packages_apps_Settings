@@ -21,11 +21,10 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
 
     private static final String SHOW_CLEAR_ALL_RECENTS = "show_clear_all_recents";
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
-    private static final String KEY_HARDWARE_KEYS = "hardwarekeys_settings";
 
     private SwitchPreference mRecentsClearAll;
     private ListPreference mRecentsClearAllLocation;
-
+		
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,15 +44,7 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
         mRecentsClearAllLocation.setValue(String.valueOf(location));
         mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
         updateRecentsLocation(location);
-  
-       // Hide Hardware Keys menu if device doesn't have any
-       PreferenceScreen hardwareKeys = (PreferenceScreen) findPreference(KEY_HARDWARE_KEYS);
-       int deviceKeys = getResources().getInteger(
-               com.android.internal.R.integer.config_deviceHardwareKeys);
-       if (deviceKeys == 0 && hardwareKeys != null) {
-           getPreferenceScreen().removePreference(hardwareKeys);
-       }
-   }
+    }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
